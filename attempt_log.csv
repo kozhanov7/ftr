@@ -1,0 +1,29 @@
+step,time,transaction,attempt,failure,action,result
+1,2026-09-30T00:47:03.712,T001,initial,None,process,SUCCESS
+3,2026-09-30T00:47:03.712,T002,initial,Network,process,FAIL
+5,2026-09-30T00:47:03.712,T002,retry 1,Network,retry (network),SUCCESS
+7,2026-09-30T00:47:03.712,T003,initial,None,process,SUCCESS
+9,2026-09-30T00:47:03.712,T004,initial,Timeout,process,FAIL
+11,2026-09-30T00:47:03.712,T004,retry 1,Timeout,retry (timeout),FAIL
+13,2026-09-30T00:47:03.712,T004,retry 2,Timeout,retry (timeout),SUCCESS
+15,2026-09-30T00:47:03.712,T005,initial,None,process,SUCCESS
+18,2026-09-30T00:47:03.712,T006,initial,Database,process,FAIL
+20,2026-09-30T00:47:03.712,T006,retry 1,Database,retry (database),FAIL
+22,2026-09-30T00:47:03.712,T006,retry 2,Database,retry (database),FAIL
+24,2026-09-30T00:47:03.712,T006,-,Database,rollback,ROLLED BACK
+27,2026-09-30T00:47:03.712,T007,initial,None,process,SUCCESS
+29,2026-09-30T00:47:03.712,T008,initial,Network,process,FAIL
+31,2026-09-30T00:47:03.712,T008,retry 1,Network,retry (network),SUCCESS
+33,2026-09-30T00:47:03.712,T009,initial,None,process,SUCCESS
+35,2026-09-30T00:47:03.712,T010,initial,Timeout,process,FAIL
+37,2026-09-30T00:47:03.712,T010,retry 1,Timeout,retry (timeout),FAIL
+39,2026-09-30T00:47:03.712,T010,retry 2,Timeout,retry (timeout),SUCCESS
+41,2026-09-30T00:47:03.712,T011,initial,None,process,SUCCESS
+44,2026-09-30T00:47:03.712,T012,initial,Database,process,FAIL
+46,2026-09-30T00:47:03.712,T012,retry 1,Database,retry (database),FAIL
+48,2026-09-30T00:47:03.712,T012,retry 2,Database,retry (database),FAIL
+50,2026-09-30T00:47:03.712,T012,-,Database,rollback,ROLLED BACK
+53,2026-09-30T00:47:03.712,T013,initial,None,process,SUCCESS
+55,2026-09-30T00:47:03.712,T014,initial,None,process,SUCCESS
+57,2026-09-30T00:47:03.712,T015,initial,Network,process,FAIL
+59,2026-09-30T00:47:03.712,T015,retry 1,Network,retry (network),SUCCESS

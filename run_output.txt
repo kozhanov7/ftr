@@ -1,0 +1,30 @@
+--- B: exception handling only
+  successful: 8
+  failed: 7
+  processed_amount: 96000
+  lost_amount: 341000
+  retries: 0
+  rollbacks: 0
+  completion_rate: 53.33
+  inconsistent_records: 2
+--- C: + retry
+  successful: 13
+  failed: 2
+  processed_amount: 287000
+  lost_amount: 150000
+  retries: 11
+  rollbacks: 0
+  completion_rate: 86.67
+  inconsistent_records: 2
+--- D: + checkpoint/rollback (final)
+  successful: 13
+  failed: 2
+  processed_amount: 287000
+  lost_amount: 150000
+  retries: 11
+  rollbacks: 2
+  completion_rate: 86.67
+  inconsistent_records: 0
+
+checked idempotency: re-running T001 on final ledger
+  {'step': 62, 'time': '2026-09-30T00:47:03.713', 'event': 'duplicate_skipped', 'transaction': 'T001'}

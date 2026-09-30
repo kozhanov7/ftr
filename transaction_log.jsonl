@@ -1,0 +1,33 @@
+{"step": 2, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T001", "attempt": "initial", "amount": 12000}
+{"step": 4, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T002", "exception": "NetworkError", "attempt": "initial"}
+{"step": 6, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T002", "attempt": "retry 1", "amount": 25000}
+{"step": 8, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T003", "attempt": "initial", "amount": 8000}
+{"step": 10, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T004", "exception": "TransactionTimeout", "attempt": "initial"}
+{"step": 12, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T004", "exception": "TransactionTimeout", "attempt": "retry 1"}
+{"step": 14, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T004", "attempt": "retry 2", "amount": 45000}
+{"step": 16, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T005", "attempt": "initial", "amount": 13000}
+{"step": 17, "time": "2026-09-30T00:47:03.712", "event": "checkpoint", "name": "CP1", "successful": 5, "total": 103000}
+{"step": 19, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T006", "exception": "DatabaseError", "attempt": "initial"}
+{"step": 21, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T006", "exception": "DatabaseError", "attempt": "retry 1"}
+{"step": 23, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T006", "exception": "DatabaseError", "attempt": "retry 2"}
+{"step": 25, "time": "2026-09-30T00:47:03.712", "event": "rollback", "transaction": "T006", "to": "CP1", "replayed": 0}
+{"step": 26, "time": "2026-09-30T00:47:03.712", "event": "failed", "transaction": "T006", "exception": "DatabaseError"}
+{"step": 28, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T007", "attempt": "initial", "amount": 9000}
+{"step": 30, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T008", "exception": "NetworkError", "attempt": "initial"}
+{"step": 32, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T008", "attempt": "retry 1", "amount": 31000}
+{"step": 34, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T009", "attempt": "initial", "amount": 15000}
+{"step": 36, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T010", "exception": "TransactionTimeout", "attempt": "initial"}
+{"step": 38, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T010", "exception": "TransactionTimeout", "attempt": "retry 1"}
+{"step": 40, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T010", "attempt": "retry 2", "amount": 50000}
+{"step": 42, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T011", "attempt": "initial", "amount": 6000}
+{"step": 43, "time": "2026-09-30T00:47:03.712", "event": "checkpoint", "name": "CP2", "successful": 10, "total": 214000}
+{"step": 45, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T012", "exception": "DatabaseError", "attempt": "initial"}
+{"step": 47, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T012", "exception": "DatabaseError", "attempt": "retry 1"}
+{"step": 49, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T012", "exception": "DatabaseError", "attempt": "retry 2"}
+{"step": 51, "time": "2026-09-30T00:47:03.712", "event": "rollback", "transaction": "T012", "to": "CP2", "replayed": 0}
+{"step": 52, "time": "2026-09-30T00:47:03.712", "event": "failed", "transaction": "T012", "exception": "DatabaseError"}
+{"step": 54, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T013", "attempt": "initial", "amount": 11000}
+{"step": 56, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T014", "attempt": "initial", "amount": 22000}
+{"step": 58, "time": "2026-09-30T00:47:03.712", "event": "error", "transaction": "T015", "exception": "NetworkError", "attempt": "initial"}
+{"step": 60, "time": "2026-09-30T00:47:03.712", "event": "success", "transaction": "T015", "attempt": "retry 1", "amount": 40000}
+{"step": 61, "time": "2026-09-30T00:47:03.713", "event": "checkpoint", "name": "CP3", "successful": 13, "total": 287000}
